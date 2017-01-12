@@ -1,0 +1,24 @@
+{
+  "name": "snowapp",
+  "main": "app.js",
+  "moduleType": [
+    "globals",
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "components"
+  ],
+  "dependencies": {
+    "fs-styles": "git+https://github.com/fs-webdev/fs-styles#^1.x.x",
+    "polymer": "~1.2.1",
+    "hf": "git+https://github.com/fs-webdev/hf.git#2.3.4",
+    "iron-ajax": "PolymerElements/iron-ajax#~1.1.1"
+  },
+  "private": true
+}

@@ -1,0 +1,42 @@
+<link rel="import" href="../../components/polymer/polymer.html">
+<link rel="import" href="/components/iron-ajax/iron-ajax.html">
+
+<dom-module id="stuff-other">
+  <template>
+    <iron-ajax id="ajax" on-response="handleResponse"></iron-ajax>
+    <div>HELLO JOHN</div>
+  </template>
+</dom-module>
+
+<script>
+(function() {
+  var cache = {};
+
+  Polymer({
+    is: 'stuff-other',
+    ready: function() {
+      // pass all attributes to iron-ajax
+      for (var i = 0, len = this.attributes.length; i < len; i++) {
+        var attribute = this.attributes[i];
+
+        this.$.ajax[attribute.name] = attribute.value;
+      }
+
+      if (!cache[this.url]) {
+        console.log('not in cache');
+        this.$.ajax.generateRequest();
+      }
+      else {
+        console.log('in cache');
+        // return cache[this.url];
+      }
+      // debugger;
+    },
+    handleResponse: function(request) {
+      console.log(request.detail.response);
+
+      cache[request.detail.url] = request.detail.response;
+    }
+  });
+})()
+</script>

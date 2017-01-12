@@ -1,0 +1,8 @@
+{
+  "files": [
+    "script.js"
+  ],
+  "subs": [
+    "../subsub/assembly.json"
+  ]
+}

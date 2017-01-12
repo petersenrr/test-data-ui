@@ -1,0 +1,109 @@
+<% page = { 'title' : 'PAGE_TITLE', 'key': 'INDEX_PAGE_NAME'} %>
+<% assets = {
+  'css' : ['/css/test.css'],
+  'css' : ['/css/bootstrap.min.css'],
+  'js' : [{'defer': '/js/sample.js'}, '/modules/sample/sample.js'],
+  'html' : ['/elements/bundles/test.html']
+} %>
+<script>
+  s = {};
+  _satellite = {};
+</script>
+<div id="main" class="experiments">
+  <div class="no-layout">
+    <h1 id="opening" class="museo,serif;">Create Family</h1>
+    <hr>
+    <section class="basic">
+        <div class="containingBox">
+          <label for="sessionId" id="sessionLabel"><h6>SessionID:</h6></label>
+          <input type="text" id="sessionId">
+          <div class="template">
+              <label for="dropTemplate" ><h6>Template:</h6></label>
+              <select id="dropTemplate">
+                  <option value="Basic" selected>Basic Family</option>
+                  <option value="Indicator.DataQuality">Data Quality Family</option>
+                  <option value="Default">Default Family</option>
+                  <option value="Extended">Extended Family</option>
+                  <option value="Generational">Generation Family</option>
+                  <option value="Indicators">Indicator Family</option>
+                  <option value="Living">Living Family</option>
+                  <option value="Localized">Localized Family</option>
+                  <option value="Multiple.Husbands"">Multi Husband Family</option>
+                  <option value="Multiple.Parents">Multi Parent Family</option>
+                  <option value="Multiple.Wives">Multi Wife Family</option>
+                  <option value="Private">Private Family</option>
+                  <option value="publicPrivate">Public Private Family</option>
+                  <option value="Indicator.ResearchSuggestion"">Research Suggestion Family</option>
+                  <option value="Single.Father">Single Father Family</option>
+                  <option value="Single.Mother">Single Mother Family</option>
+                  <option value="Temple">Temple Family</option>
+              </select>
+          </div>
+          <label for="children" ><h6>Number of children:</h6></label>
+          <input type="text" id="children">
+          <div class="dropdown">
+              <label for="drop" ><h6>Marriage event:</h6></label>
+              <select id="drop">
+                  <option value="true">Yes</option>
+                  <option value="false" selected>No</option>
+              </select>
+          </div>
+          <label for="templeReady" ><h6>Temple Ready:</h6></label>
+          <input type="text" id="templeReady">
+          <div id="gen">
+            <label for="generations" ><h6>Generations (Enter 0 for none):</h6></label>
+            <input type="text" id="generations">
+          </div>
+          <div id="advance">
+            <label for="date" ><h6>Date:</h6></label>
+            <input type="text" id="date">
+            <label for="familyName" ><h6>Family Name:</h6></label>
+            <input type="text" id="familyName">
+            <label for="husbands" ><h6>Husbands:</h6></label>
+            <input type="text" id="husbands">
+            <label for="Wives" ><h6>Wives:</h6></label>
+            <input type="text" id="wives">
+            <label for="locale" ><h6>Locale:</h6></label>
+            <input type="text" id="locale">
+            <label for="parents" ><h6>Parents:</h6></label>
+            <input type="text" id="parents">
+            <label for="place" ><h6>Place:</h6></label>
+            <input type="text" id="place">
+            <div class="dropdown">
+              <label for="dropLiving" ><h6>Living:</h6></label>
+              <select id="dropLiving">
+                  <option value="true">Yes</option>
+                  <option value="false" selected>No</option>
+              </select>
+            </div>
+            <div class="dropdown">
+                <label for="dropDataQuality" ><h6>Data Quality:</h6></label>
+                <select id="dropDataQuality">
+                    <option value="true">Yes</option>
+                    <option value="false" selected>No</option>
+                </select>
+            </div>
+            <div class="dropdown">
+                <label for="dropResearch" ><h6>Research Suggestions:</h6></label>
+                <select id="dropResearch">
+                    <option value="true">Yes</option>
+                    <option value="false" selected>No</option>
+                </select>
+            </div>
+            <div class="dropdown">
+                <label for="dropPrivate" ><h6>Private:</h6></label>
+                <select id="dropPrivate">
+                    <option value="true">Yes</option>
+                    <option value="false" selected>No</option>
+                </select>
+            </div>
+          </div>
+          <div>
+            <a href="#" id="advanceButton"  onclick="advanced()" class="btn btn-default">Advanced Settings (more options)</a>
+          </div>
+          <hr>
+          <a href="#" id="createButton"  onclick="createFamily()" class="btn btn-default">Create Family</a>
+        </div>
+    </section>
+  </div>
+</div>

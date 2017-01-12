@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+# fail fast
+set -o errexit
+set -o pipefail
+
+export BASE_URL=http://localhost:5000
+
+./node_modules/frontier-build-tools/testScripts/run-mocha-local && \
+  ./node_modules/karma/bin/karma start test/karma.conf.js  --single-run
+

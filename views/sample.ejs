@@ -1,0 +1,21 @@
+<% page = { 'title' : 'PAGE_TITLE', 'key': 'SAMPLE_PAGE_NAME'} %>
+<% assets = { 'css' : ['/css/sample.css'], 'js' : [{'defer': '/js/test.js'}, '/modules/sample/sample.js'] } %>
+
+<div id="main" class="experiments" onLoad="readData()">
+  <div class="no-layout">
+	  <div class="containingBox">
+	    <h4 class="heading">Resulting ID and Name</h4>
+	    <hr>
+	    <section class="basic">
+	      <label for="test" ><h5>ID Created:</h5></label>
+	      <p id="test"></p>
+
+	      <label for="testName" ><h5>Name of Person Created:</h5></label>
+	      <p id="testName"></p>
+	    </section>
+	    <div class="link">
+	    	<a href="/index.ejs" id="backButton" class="btn btn-default">Return to Previous Screen</a>
+	    </div>
+	  </div>
+  </div>
+</div>

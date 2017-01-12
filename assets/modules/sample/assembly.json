@@ -1,0 +1,12 @@
+{
+  "files": [
+    "sample.js",
+    "notFound.js"
+  ],
+  "assemblies": [
+    "../sub"
+  ],
+  "styles": [
+    "sample.css"
+  ]
+}

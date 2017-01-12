@@ -1,0 +1,4 @@
+[
+  "components/iron-ajax/iron-request.html",
+  "components/promise-polyfill/promise-polyfill-lite.html"
+]
