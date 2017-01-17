@@ -5,12 +5,41 @@
   console.log(output);
   (document.getElementById("gen")).style.display = 'none';
   (document.getElementById("advance")).style.display = 'none';
+  FS.baseUrl = "https://integration.familysearch.org";
+  
+  //set default for the locale dropdown
+  var locales = ["zh", "en", "es", "fr", "de", "it", "ja", "ko", "pt", "ru"];
+  var simpleLang = FS.simpleLocale();
+  var i;
+  for(i = 0; i < locales.length; i++)
+  {
+    if(simpleLang == locales[i])
+    {
+      simpleLang = i;
+      break;
+    } 
+  }
+  document.getElementById("dropLocale").options.selectedIndex = simpleLang;
+
+  function getCook(cookiename) 
+  {
+  // Get name followed by anything except a semicolon
+  var cookiestring=RegExp(""+cookiename+"[^;]+").exec(document.cookie);
+  // Return everything after the equal sign, or an empty string if the cookie name not found
+  return unescape(!!cookiestring ? cookiestring.toString().replace(/^[^=]+./,"") : "");
+  }
+
+//Sample usage
+
+
+  var cookieValue = getCook('fssessionid');
+
+
 })();
 
 var id;
 
 function loadUrl(){
-  // window.location.href = "/sample.ejs";
   window.open("https://integration.familysearch.org/tree/person/" + id,'_blank');;
 }
 
@@ -46,7 +75,7 @@ function createFamily() {
     var familyName = document.getElementById("familyName").value;
     var husbands = document.getElementById("husbands").value;
     var wives = document.getElementById("wives").value;
-    var locale = document.getElementById("locale").value;
+    var locale = document.getElementById("dropLocale").value;
     var parents = document.getElementById("parents").value;
 
     var place = document.getElementById("place").value;

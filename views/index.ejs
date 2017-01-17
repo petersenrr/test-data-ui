@@ -15,8 +15,11 @@
     <hr>
     <section class="basic">
         <div class="containingBox">
+
           <label for="sessionId" id="sessionLabel"><h6>SessionID:</h6></label>
           <input type="text" id="sessionId">
+
+
           <div class="template">
               <label for="dropTemplate" ><h6>Template:</h6></label>
               <select id="dropTemplate">
@@ -39,8 +42,12 @@
                   <option value="Temple">Temple Family</option>
               </select>
           </div>
+
+
           <label for="children" ><h6>Number of children:</h6></label>
-          <input type="text" id="children">
+          <input type="text" id="children" placeholder="6">
+
+
           <div class="dropdown">
               <label for="drop" ><h6>Marriage event:</h6></label>
               <select id="drop">
@@ -48,27 +55,64 @@
                   <option value="false" selected>No</option>
               </select>
           </div>
+
+
           <label for="templeReady" ><h6>Temple Ready:</h6></label>
-          <input type="text" id="templeReady">
+          <input type="text" id="templeReady" placeholder="false">
+
+
           <div id="gen">
             <label for="generations" ><h6>Generations (Enter 0 for none):</h6></label>
-            <input type="text" id="generations">
+            <input type="text" id="generations" placeholder="3">
           </div>
+
+
           <div id="advance">
             <label for="date" ><h6>Date:</h6></label>
             <input type="text" id="date">
+
+
             <label for="familyName" ><h6>Family Name:</h6></label>
-            <input type="text" id="familyName">
+            <input type="text" id="familyName" placeholder="Smith">
+
+
             <label for="husbands" ><h6>Husbands:</h6></label>
-            <input type="text" id="husbands">
+            <input type="text" id="husbands" placeholder="2">
+
+
             <label for="Wives" ><h6>Wives:</h6></label>
-            <input type="text" id="wives">
-            <label for="locale" ><h6>Locale:</h6></label>
-            <input type="text" id="locale">
+            <input type="text" id="wives" placeholder="3">
+
+
+            <!--<label for="locale" ><h6>Locale:</h6></label>
+            <input type="text" id="locale"> -->
+
+
+            <div class="template">
+              <label for="dropLocale" ><h6>Locale:</h6></label>
+              <select id="dropLocale">
+                  <option value="zh">Chinese</option>
+                  <option value="en" selected>English</option>
+                  <option value="es">Spanish</option>
+                  <option value="fr">French</option>
+                  <option value="de">German</option>
+                  <option value="it">Italian</option>
+                  <option value="ja">Japanese</option>
+                  <option value="ko">Korean</option>
+                  <option value="pt">Portuguese</option>
+                  <option value="ru">Russian</option>
+              </select>
+            </div>
+
+
             <label for="parents" ><h6>Parents:</h6></label>
-            <input type="text" id="parents">
+            <input type="text" id="parents" placeholder="1">
+
+
             <label for="place" ><h6>Place:</h6></label>
-            <input type="text" id="place">
+            <input type="text" id="place" placeholder="Orem, UT">
+
+
             <div class="dropdown">
               <label for="dropLiving" ><h6>Living:</h6></label>
               <select id="dropLiving">
@@ -76,6 +120,8 @@
                   <option value="false" selected>No</option>
               </select>
             </div>
+
+
             <div class="dropdown">
                 <label for="dropDataQuality" ><h6>Data Quality:</h6></label>
                 <select id="dropDataQuality">
@@ -83,6 +129,8 @@
                     <option value="false" selected>No</option>
                 </select>
             </div>
+
+
             <div class="dropdown">
                 <label for="dropResearch" ><h6>Research Suggestions:</h6></label>
                 <select id="dropResearch">
@@ -90,6 +138,8 @@
                     <option value="false" selected>No</option>
                 </select>
             </div>
+
+
             <div class="dropdown">
                 <label for="dropPrivate" ><h6>Private:</h6></label>
                 <select id="dropPrivate">
@@ -97,6 +147,7 @@
                     <option value="false" selected>No</option>
                 </select>
             </div>
+
           </div>
           <div>
             <a href="#" id="advanceButton"  onclick="advanced()" class="btn btn-default">Advanced Settings (more options)</a>
