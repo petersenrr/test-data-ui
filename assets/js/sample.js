@@ -1,14 +1,12 @@
 (function() {
-  var test = 1;
-  var output = 'sample app loaded';
-  console.log(test);
-  console.log(output);
   (document.getElementById("gen")).style.display = 'none';
   (document.getElementById("advance")).style.display = 'none';
   FS.baseUrl = "https://integration.familysearch.org";
   
   //set default for the locale dropdown
-  var locales = ["zh", "en", "es", "fr", "de", "it", "ja", "ko", "pt", "ru"];
+  var locales = ["sq", "hy", "bg", "zh", "hr", "cs", "da", "nl", "en", "et", "fj", "fi", "fr", "de", "el", 
+  "ht", "hu", "is", "id", "it", "ja", "km", "ko", "lv", "lt", "mk", "ms", "mn", "no", "pl", "pt", 
+  "ro", "ru", "sm", "sr", "sk", "sl", "es", "sv", "th", "to", "uk", "vi"];
   var simpleLang = FS.simpleLocale();
   var i;
   for(i = 0; i < locales.length; i++)

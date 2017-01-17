@@ -1,0 +1,74 @@
+#sessionId, #children, #drop, #dropTemplate, #templeReady, #generations, #date, #familyName, #husbands, #wives, #dropLocale, #parents, #place, #dropLiving, #dropDataQuality, #dropResearch, #dropPrivate {
+	padding-top: 0;
+	margin-top: 0;
+    margin-bottom: 20px;
+    display: block;
+}
+
+#sessionLabel {
+	margin-top: 10px;
+}
+
+#opening {
+    margin-left: 40%;
+    margin-top: 20px;
+    color: #777;
+    font-weight: 300;
+}
+#createButton {
+    margin-left: 45%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 1.25rem;
+}
+
+#advanceButton {
+	margin-left: 40.5%;
+    margin-top: 10px;
+}
+
+#sessionId {
+	width: 70%;
+	margin-left: 15%;
+}
+#children {
+	width: 10%;
+	margin-left: 15%;
+}
+#drop, #dropDataQuality, #dropResearch, #dropPrivate, #dropLiving, #dropLocale {
+	width: 30%;
+	margin-left: 15%;
+}
+
+#dropTemplate {
+	width: 30%;
+	margin-left: 15%;
+}
+#templeReady, #date, #familyName, #husbands, #wives, #locale, #parents, #place, #living {
+	width: 30%;
+	margin-left: 15%;
+}
+#generations {
+	width: 30%;
+	margin-left: 15%;
+}
+
+.containingBox {
+	background: #f1f1f1;
+	border-radius: 25px;
+}
+
+.containingBox label {
+	padding-left: 10%;
+	font-family: Verdana,sans-serif;
+	margin-bottom: 0rem;
+	color: #333331;
+}
+
+#sessionLabel {
+	padding-top: 10px;
+}
+
+#backButton {
+	margin-top: 5%;
+}
