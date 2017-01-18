@@ -56,6 +56,7 @@
 .containingBox {
 	background: #f1f1f1;
 	border-radius: 25px;
+	margin-top: 10px;
 }
 
 .containingBox label {
@@ -65,10 +66,14 @@
 	color: #333331;
 }
 
-#sessionLabel {
+#templateLabel {
 	padding-top: 10px;
 }
 
 #backButton {
 	margin-top: 5%;
+}
+
+hr{
+	margin: 0;
 }

@@ -16,12 +16,8 @@
     <section class="basic">
         <div class="containingBox">
 
-          <label for="sessionId" id="sessionLabel"><h6>SessionID:</h6></label>
-          <input type="text" id="sessionId">
-
-
           <div class="template">
-              <label for="dropTemplate" ><h6>Template:</h6></label>
+              <label for="dropTemplate" id="templateLabel"><h6>Template:</h6></label>
               <select id="dropTemplate">
                   <option value="Basic" selected>Basic Family</option>
                   <option value="Indicator.DataQuality">Data Quality Family</option>
@@ -44,22 +40,28 @@
           </div>
 
 
-          <label for="children" ><h6>Number of children:</h6></label>
-          <input type="text" id="children" placeholder="6">
+          <label for="sessionId" id="sessionLabel"><h6>SessionID:</h6></label>
+          <input type="text" id="sessionId">
 
-
-          <div class="dropdown">
-              <label for="drop" ><h6>Marriage event:</h6></label>
-              <select id="drop">
-                  <option value="true">Yes</option>
-                  <option value="false" selected>No</option>
-              </select>
+          <div id="childrenSection">
+            <label for="children" ><h6>Number of children:</h6></label>
+            <input type="text" id="children" placeholder="6">
           </div>
 
+          <div id="marriageSection">
+            <div class="dropdown">
+                <label for="drop" ><h6>Marriage event:</h6></label>
+                <select id="drop">
+                    <option value="true">Yes</option>
+                    <option value="false" selected>No</option>
+                </select>
+            </div>
+          </div>
 
-          <label for="templeReady" ><h6>Temple Ready:</h6></label>
-          <input type="text" id="templeReady" placeholder="false">
-
+          <div id="templeSection">
+            <label for="templeReady" ><h6>Temple Ready:</h6></label>
+            <input type="text" id="templeReady" placeholder="false">
+          </div>
 
           <div id="gen">
             <label for="generations" ><h6>Generations (Enter 0 for none):</h6></label>
@@ -67,27 +69,28 @@
           </div>
 
 
-          <div id="advance">
+          <div id="dateSection">
             <label for="date" ><h6>Date:</h6></label>
-            <input type="text" id="date">
+            <input type="text" id="date" placeholder="MM/DD/YYYY">
+          </div>
 
-
+          <div id="familyNameSection">
             <label for="familyName" ><h6>Family Name:</h6></label>
             <input type="text" id="familyName" placeholder="Smith">
+          </div>
 
-
+          <div id="husbandsSection">
             <label for="husbands" ><h6>Husbands:</h6></label>
             <input type="text" id="husbands" placeholder="2">
+          </div>
 
-
+          <div id="wivesSection">
             <label for="Wives" ><h6>Wives:</h6></label>
             <input type="text" id="wives" placeholder="3">
+          </div>
 
 
-            <!--<label for="locale" ><h6>Locale:</h6></label>
-            <input type="text" id="locale"> -->
-
-
+          <div id="localeSection">
             <div class="template">
               <label for="dropLocale" ><h6>Locale:</h6></label>
               <select id="dropLocale">
@@ -136,16 +139,19 @@
                   <option value="vi">Vietnamese</option>
               </select>
             </div>
+          </div>
 
-
+          <div id="parentsSection">
             <label for="parents" ><h6>Parents:</h6></label>
             <input type="text" id="parents" placeholder="1">
+          </div>
 
-
+          <div id="placeSection">
             <label for="place" ><h6>Place:</h6></label>
             <input type="text" id="place" placeholder="Orem, UT">
+          </div>
 
-
+          <div id="livingSection">
             <div class="dropdown">
               <label for="dropLiving" ><h6>Living:</h6></label>
               <select id="dropLiving">
@@ -153,8 +159,9 @@
                   <option value="false" selected>No</option>
               </select>
             </div>
+          </div>
 
-
+          <div id="qualitySection">
             <div class="dropdown">
                 <label for="dropDataQuality" ><h6>Data Quality:</h6></label>
                 <select id="dropDataQuality">
@@ -162,8 +169,9 @@
                     <option value="false" selected>No</option>
                 </select>
             </div>
+          </div>
 
-
+          <div id="researchSection">
             <div class="dropdown">
                 <label for="dropResearch" ><h6>Research Suggestions:</h6></label>
                 <select id="dropResearch">
@@ -171,8 +179,9 @@
                     <option value="false" selected>No</option>
                 </select>
             </div>
+          </div>
 
-
+          <div id="privateSection">
             <div class="dropdown">
                 <label for="dropPrivate" ><h6>Private:</h6></label>
                 <select id="dropPrivate">
@@ -180,11 +189,9 @@
                     <option value="false" selected>No</option>
                 </select>
             </div>
+          </div>
 
-          </div>
-          <div>
-            <a href="#" id="advanceButton"  onclick="advanced()" class="btn btn-default">Advanced Settings (more options)</a>
-          </div>
+        
           <hr>
           <a href="#" id="createButton"  onclick="createFamily()" class="btn btn-default">Create Family</a>
         </div>
